@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BridgewayChina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-WpE636F_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CFDQDJRs.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Remove Kimi Agent watermark
+      (function() {
+        function removeKimiAgent() {
+          var els = document.querySelectorAll('a[href*="kimi.com/agent"], .kimi-agent-badge, [class*="kimi-agent"], [id*="kimi-agent"]');
+          els.forEach(function(el) { if(el.parentNode) el.parentNode.removeChild(el); });
+        }
+        removeKimiAgent();
+        setInterval(removeKimiAgent, 500);
+        document.addEventListener('DOMContentLoaded', removeKimiAgent);
+        window.addEventListener('load', removeKimiAgent);
+      })();
+    </script>
+  </body>
+</html>
